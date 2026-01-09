@@ -1,0 +1,8 @@
+# primary libraries
+jupyter notebook
+pandas
+plotly
+statsmodels
+
+# utility for plotly (required for static image export)
+kaleido

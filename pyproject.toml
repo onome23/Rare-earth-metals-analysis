@@ -1,0 +1,37 @@
+[project]
+name = "REE_data_analysis"
+version = "0.1.0"
+description = "A simple data analysis project using pandas and plotly"
+requires-python = ">=3.9"
+authors = [
+    { name = "onome23", email = "onomeogbodu23@gmail.com" },
+]
+license = { text = "MIT" }
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+# Specify the main dependencies for the project
+dependencies = [
+    "pandas",
+    "plotly",
+    "statsmodels",
+]
+
+[project.optional-dependencies]
+# Dependencies needed specifically for development and the Jupyter environment
+dev = [
+    "jupyterlab",
+    "notebook",
+    "ipykernel",
+    "matplotlib", # often useful for quick visualizations
+]
+
+[build-system]
+# Minimal requirements for the build system (using setuptools backend as common default)
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
